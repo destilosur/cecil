@@ -3,7 +3,6 @@ import { World } from './World/World.js';
 const boton = document.querySelector('#boton');
 const audio = document.querySelector('#audioMp3');
 const labelAudio = document.querySelector('#label-audio');
-console.log(audio);
 
 let isOn = true;
 
@@ -26,12 +25,14 @@ async function main() {
 			isOn = true;
 			boton.classList.toggle('btn-on');
 			boton.classList.toggle('btn-off');
+			audio.play();
 			return world.start();
 		}
 
 		isOn = false;
 		boton.classList.toggle('btn-on');
 		boton.classList.toggle('btn-off');
+		audio.pause();
 		return world.stop();
 	};
 
@@ -41,7 +42,6 @@ async function main() {
 
 	function play(){
 		audio.play();
-		// console.log(audio.is);
 	}
 
 }

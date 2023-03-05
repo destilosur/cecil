@@ -1,0 +1,124 @@
+body {
+    /* remove margins and scroll bars */
+    margin: 0;
+    overflow: hidden;
+  
+    /* style text */
+    text-align: center;
+    font-size: 12px;
+    font-family: Sans-Serif;
+  
+    /* color text */
+    color: #444;
+  }
+
+  header{
+    position: absolute;
+    /* background-color: blue; */
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .menu{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: left;
+    padding: 2ch;
+    color: beige;
+
+  }
+
+  .menu h2{
+    padding: 0px 10px;
+  }
+  
+ .img-titulo{
+  position: absolute;
+  z-index: 8;
+  /* background-color: aqua; */
+  left: 60%;
+  top: 10%;
+  
+}
+
+.img-titulo img{
+  width: 60%;
+
+ }
+
+ .label-audio{
+  position: absolute;
+  z-index: 7;
+  left: 30%;
+  top :90%;
+  padding: 20px;
+  color: antiquewhite;
+  font-size: 20px;
+  /* background-color: antiquewhite; */
+
+ }
+
+
+  .rotate{
+    left: 10%;
+  }
+
+
+  
+  #scene-container {
+    /* tell our scene container to take up the full page */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  
+    /*
+      Set the container's background color to the same as the scene's
+      background to prevent flashing on load
+    */
+    background-color: #71c5b0;
+  }
+
+
+
+  button{
+    position: absolute;
+    z-index: 9;
+    left: 90%;
+    top: 90%;
+    width: 100px;
+    height: 60px;
+    margin: 10px ; 
+    border-radius: 20px;
+    background-color: transparent;
+    border: none;
+    color: rgb(255, 0, 170);
+    box-shadow: 10px 5px 17px black;
+    font-size: large;
+  }
+
+  
+  
+  .btn-off  ::before{
+    
+    background-color: hsl(165, 42%, 31%);
+    padding: 10% 10%;
+    content: 'Start'; 
+    
+    border-radius: 20px;
+  }
+  .btn-on  ::before{
+    background-color: hsl(51, 86%, 49%);
+    color: rgb(13, 42, 49);
+    padding: 10% 10%;
+    content: 'Stop'; 
+    
+    border-radius: 20px;
+  }
+
+  
+ 
+
+/*# sourceMappingURL=/main.d2070829.css.map */

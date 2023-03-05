@@ -52,7 +52,7 @@ body {
  .label-audio{
   position: absolute;
   z-index: 7;
-  left: 50%;
+  left: 30%;
   top :90%;
   padding: 20px;
   color: antiquewhite;
