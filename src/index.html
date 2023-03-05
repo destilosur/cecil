@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Discoverthreejs.com - The Structure of a three.js App</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta charset="UTF-8" />
+
+		<link rel="icon" href="https://discoverthreejs.com/favicon.ico" type="image/x-icon" />
+
+		<link href="./styles/main.css" rel="stylesheet" type="text/css" />
+	</head>
+
+	<body>
+
+		<header>
+			<div class="menu">
+				<h2 id="etiqueta">Zoom</h2>
+				<h2 id="rotate" class="rotate">Rotate</h2>
+			</div>
+		</header>
+		<div class="img-titulo">
+			<img src="./img/titulo.png" alt="Titulo-Cecil">
+		</div>
+
+		<audio src="./audio/Reinicio.mp3" id="audioMp3"></audio>
+		<label for="audioMp3" class="label-audio" id="label-audio">Audio</label>
+		
+		<div id="scene-container"></div>
+		
+		<button id="boton" class="btn-on"><p></p></button>
+		<script src="index.js" type="module"></script>
+	</body>
+</html>
